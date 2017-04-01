@@ -1,0 +1,128 @@
+<html>	
+	<head>	
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="scrollable">
+			<div class="scrollable-content">
+				<div class="list-group text-center">
+					<!-- cục giới thiệu -->
+					
+						<div class="list-group-item list-group-item-home">
+							<h1><font  size="20"  color="red" <big> <strong> <blink> RoboticsLab 2017 </blink></big> </strong> </font>
+							</h1>
+						</div>
+					
+					
+						<!-- Cục cảm biến -->
+						<div class="list-group-item list-group-item-home">
+						<h1> DATA OF SENSORS </h1>
+						<div>
+							<i class="fa fa-gamepad feature-icon text-primary"></i>
+						</div>
+						<div>
+							<h3 class="home-heading"><small>SONAR SENSOR</small></h3>
+													
+													<button class ="text" size="200" color =#800000 >
+														 {{sonar[2]}} cm 
+													<!-- -->
+													
+													</div>
+													<div>
+													
+													<button class ="text" size="200" color =#800000 >
+														{{sonar[0]}} cm 
+													<button class ="text" size="200" color =#800000 >			
+													<button class ="text" size="200" color =#800000 >
+														{{sonar[1]}} cm  
+													</div>
+													<div>
+													<button class ="text" size="200" color =#800000 >
+													
+													{{sonar[3]}} cm 
+													<button class ="text" size="200" color =#800000 >
+													<button class ="text" size="200" color =#800000 >
+														{{sonar[4]}} cm  
+													<!-- -->
+													
+													</div>
+							
+							
+							<div>
+							<h3 class="home-heading"></h3>
+							<button class ="text" size="200" color =#800000 >	
+								TEMPERATURE :{{temp}}°C
+							<button class ="text" size="200" color =#800000 >
+								ANGLE :{{direct}}°
+							<button class ="text" size="200" color =#800000 >
+								MOTION :{{pir}}	
+							
+							<button class ="text" size="200" color =#800000 >
+								STATUS :{{stt}}
+							<button class="button" ng-click="update()">
+								UPDATE NOW !	
+								
+							</div>
+						
+						</div>
+					
+					<!-- Cục thay đổi trạng thái LED -->
+					<div class="list-group-item list-group-item-home">
+						<div>
+							<i class="fa fa-tachometer feature-icon  text-primary"></i>
+						
+							<h1> CONTROL </h1>
+							<div>
+							<h3 class="home-heading"> </h3>
+							
+								<button  class="button" size="30"   ng-click="up()">
+									UP
+							</div>
+							<h3 class="home-heading"></h3>
+							<div>
+								<button class="button" size="30" ng-click="left()">
+									LEFT
+								<button class="button" size="30" ng-click="stop()">
+									STOP
+								<button  class="button" size="30"   ng-click="right()">
+									RIGHT
+							</div>	
+							<h3 class="home-heading"></h3>
+							<div>
+							
+								<h3 class="home-heading"></h3>	
+								<button class="button" size="30" ng-click="down()">
+									DOWN
+							</div>	
+								
+						</div>
+						<div>
+							<h3 class="home-heading">  <small>EMERGENCY CONTROL </small></h3>
+							<div>
+							
+								<button class="button" size="20" ng-click="start()">
+								 START  
+								<button class="button" size="20" ng-click="emergency()">
+								 FREEZE 
+								<button class="button" ng-click="sos()">
+								SEND SOS
+								<button class="button" size="20" ng-click="offsos()">
+								OFFSOS
+								<div id="reset" >
+									<button class="button" ng-click="res()">
+									RESET NOW
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					<!-- Cục cập nhập giá trị cảm biến -->
+				
+				</div>	
+			</div>
+		</div>
+	</body>
+</html>	
+	
